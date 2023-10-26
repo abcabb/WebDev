@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .first{
+            color: yellow;
+            background-color: blue;
+        }
+
+        h1.first{
+            color: black;
+            background-color: chartreuse;
+
+        }
+
+        .second, .third{
+            padding-left: 85px;
+        }
+
+        p.forth{
+            margin-left: 80px;
+            border: 1px solid red;
+        }
+
+        .fifth{
+            padding-left: 50px;
+            border: 1px solid red;
+        }
+
+        #firstParagraph{
+            color: red;
+        }
+        /* Internet uzantısının sonuna #firstPararaph yazarsan; tarayıcı ekranı, firstParagraph id'li yazının
+        hizasına gelir. Not : Aynı id'yi farklı yerlerde kullanamazsın. firstParagraph sadece o paragrafı anlatır.
+        Ama class farklı. Ayrıca, bu özelliği sadece id isimleri ile yapabilirsin. Class ları bu şekilde yazamazsın. */
+
+        p[title = "one"]{
+            color: darkgoldenrod;
+        }
+        p[lang= "one"]{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, delectus.</p>
+    <p class="first second">Lorem ipsum dolor sit amet.</p>
+
+    <h1 class="first"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolore ut quibusdam?</h1>
+    <p class="second"> Lorem, ipsum dolor.</p>
+    <p class="third"> Lorem ipsum dolor sit.</p>
+    <p class="forth"> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+    <p class="fifth"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <p id="firstParagraph"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dignissimos neque rem! Repellendus, dicta atque, ut accusantium inventore sed iusto at doloribus, sit consequuntur unde recusandae est amet vitae dolorum laboriosam saepe id. Commodi odit amet, pariatur animi enim laboriosam soluta voluptates illo delectus asperiores accusantium, tempore beatae illum dolorum perspiciatis debitis! Voluptas libero molestias, fuga nostrum ipsa, numquam obcaecati ipsum quibusdam odit illum aperiam ut in soluta adipisci maxime! Tenetur magni ipsa in consectetur unde blanditiis exercitationem quod aliquam ad. Eos asperiores officia quibusdam, illum aspernatur corrupti optio dolore voluptatem, aut amet ipsam! Dolor debitis iusto nulla aliquid tenetur harum quos nihil voluptates? Autem repellendus amet facere. Minus assumenda dolorum eius modi quam, dolorem, omnis enim, dignissimos tempore pariatur optio qui. Libero, quos atque magnam perspiciatis similique facere quod nam officia hic accusantium suscipit omnis! In esse cum explicabo, quo laboriosam doloribus ea nobis non placeat animi, adipisci enim! Repellendus quibusdam quas saepe, quidem esse sit accusantium, fuga recusandae repellat dolorem consequatur. Culpa laborum quam quae excepturi illo unde ducimus quasi nesciunt animi deserunt molestias dicta iste saepe at vitae tempore incidunt optio quo, adipisci dignissimos temporibus accusamus facere. Assumenda adipisci animi unde nihil officia impedit esse quaerat ea exercitationem, aliquid, repudiandae illum placeat dignissimos inventore accusantium veritatis voluptatibus, porro natus dolorum! Dolorum recusandae quos placeat et atque, nostrum quas? Temporibus quisquam deleniti magnam odio, labore aliquam ex nihil est ad natus dolore, eum repellendus at veniam, voluptatibus accusantium aspernatur deserunt suscipit! Officia repudiandae esse, veritatis ullam enim nam dolor! In ex ipsum esse quod at ut, eos reprehenderit dolor tempora vel vero repellat neque quasi, nesciunt eaque quibusdam laudantium dolore maxime mollitia ipsam repudiandae id perferendis ab. Minus, quia. Pariatur saepe excepturi, tempore dolore quidem a aut vero. Eligendi consectetur est voluptas, suscipit vel voluptatum excepturi aliquid commodi vero quos asperiores expedita. Earum et, autem repellat voluptatibus dolore officiis est nobis doloribus distinctio sunt harum quas iure deleniti alias vel reprehenderit ratione odit accusantium hic eum sapiente. Eveniet ut cumque expedita excepturi aliquam commodi, in quis? Pariatur commodi perferendis dicta harum nesciunt itaque aliquam earum distinctio nulla eveniet sequi quia tenetur nobis maxime saepe, ducimus magni cum quisquam rem sapiente, aspernatur vitae dolor optio eius? Eaque minima veritatis nemo molestiae praesentium voluptatum porro voluptatem, necessitatibus, optio, rem mollitia quis dignissimos ipsa perspiciatis enim. Delectus consectetur nisi nobis eligendi animi, fuga provident error quibusdam fugiat accusamus non dolorum soluta.</p>
+
+    <p title="one"> Lorem ipsum dolor sit amet.</p>
+    <p lang="one">Lorem ipsum dolor sit amet.</p>
+</body> 
+</html>

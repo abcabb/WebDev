@@ -1,0 +1,9 @@
+h2{
+    color: darkorange!important; /* !important komudu html kodunda ne yazarsa yazsın, h2 lerin hep bu renkte kalmasını sağlar. */
+    font-weight: 150;
+}
+
+h3{
+    color: rgb(7 , 3, 66);
+    font-size: 48px;
+}

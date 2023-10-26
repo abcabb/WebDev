@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #ffe600;
+    color: #fff;
+  }
+
+  article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  time{
+    font-weight: bold;
+  }
