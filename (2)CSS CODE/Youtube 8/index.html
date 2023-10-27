@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divbox{
+            width: 250px;
+            height: 250px;
+        }
+        #container{
+            background: gray;
+            width: 750px;
+            height: 750px;
+            overflow: scroll;
+        }
+        #red{
+            /* Absoute position Örnek */
+            background: red;
+            position: absolute;
+            bottom: 250px;
+            right: 1000px;
+        }
+        #green{
+            background: green;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+        #blue{
+            background: blue;
+        }
+        h1{
+            font-size: 80px;
+        }
+        #test{
+            color: red;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div class="divbox" id="red"></div>
+        <div class="divbox" id="green"></div>
+        <div class="divbox" id="blue"></div>
+    </div>
+
+    <div class="container2">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo porro dolores laudantium eum reiciendis error temporibus placeat, ab, quam ipsam ut totam veritatis doloribus repellat voluptatem, aut aspernatur at illum blanditiis. Laboriosam consequuntur magni earum modi, iste minima sunt quam maxime fugiat aliquam architecto nobis dolore maiores possimus eos a id facilis aspernatur. Odit distinctio id debitis saepe hic delectus dolor accusantium veniam laborum doloribus quasi eum asperiores possimus vero, assumenda nemo. Sequi enim itaque sit consequatur, natus ut odit, nesciunt recusandae, porro alias quis quae culpa libero? Eius esse, ut nam minus ratione laboriosam commodi consectetur a ipsa?</h1>
+    </div>
+
+    <div id="test">
+        <h2> TİTLE TİTLE TİTLE TİTLE </h2>
+    </div>
+</body>
+</html>
+
+<!-- positions -->
+<!-- ABSOLUTE / RELATİVE / FİXED -->
+<!-- Absolute ile akışın tamamen dışına çıkar ve KENARLARA GÖRE kaydırmalar yapabilirsin. -->
+<!-- Relative ile BULUNDUĞU KONUMA GÖRE kaydırmalar yapabilirsin. -->
+<!-- Fixed in olayı da scroll yapsan da aynı kalıyo.-->
