@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 36px;
+            font-weight: 1000;
+            color: blue;
+        }
+
+        .example{
+            color: darkgoldenrod;
+        }
+
+        #x{
+            color: green;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a p{ /* araya boşluk bırakmak , a nın altındaki p'ler demektir */
+            color: aqua !important;
+        }
+
+        a div p{
+            color: crimson; /* !important olduğu için bu uygulanmadı */
+        }
+    </style>
+</head>
+<body>
+    <!--Style Overwrite-->
+    <p class="example" id="x">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</p>
+    <p class="example"> aaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+    <p> aaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+    <!--Style Overwrite-->
+
+    <a href="">
+        <p> HelloHelloHelloHello </p>
+        <div>
+            <p>Hello Dude</p>
+        </div>
+    </a>
+</body>
+</html>
