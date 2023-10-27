@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 250px;
+            height: 250px;
+            display: inline-block; /* inline-block' un inline dan farkı, inline span'daki gibi içerik kadar yer kaplıyordu,
+                                      bu ise; içerik(text) olmasa bile div için verilen geniliği vs.(örnek arka plan rengi)
+                                      hesaba katar ve o kadar alanı kaplar. Ama bütün satırı kaplamaz !!!! Fark budur. 
+                                      (Eğer kutular yan yana gelmediyse sekmeyi büyült). */
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+            display: none;
+        }
+        #darkblue{
+            background-color: darkblue;
+        }
+        #yellow{
+            background-color: yellow;
+            display: inline; /* yellow gözükmez çünkü display "inline" yaptık" yani ne kadar içeriği varsa artık tam olarak
+                                o kadar yer kaplayacak */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, voluptatem?</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <!-- Div, p, h1 gibi etiketler bütün satırı kaplıyor biliyosun. Ancak span farklı -->
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illo nulla libero aliquid quasi ex.</span>
+    <!-- Span'da yandan devam ediyor. Çünkü spam içerdiği içerik kadar yer kaplıyor. Bütün satırı kaplamıyor, nereye kadar
+    yazıldıysa oraya kadar yer kaplıyor.-->
+
+    <!-- Ama span gibi olmayan block elemanlar(div, p, h1, h2...) bütün satırı kapladığı için onlara genişlik ve yükseklik
+    verebiliyoruz. Ama inline olan elemanlara(span) genişlik ve yükseklik veremiyoruz. -->
+
+    <div id="darkblue"></div>
+    <div id="yellow"></div>
+</body>
+</html>
