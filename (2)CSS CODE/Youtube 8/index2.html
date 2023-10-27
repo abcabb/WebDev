@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divbox{
+            height: 250px;
+            width: 250px;
+        }
+        #red{
+            background: red;
+        }
+        #green{
+            background: green;
+            position: relative;
+        }
+        #blue{
+            background: blue;
+        }
+        #container{
+            background: gray;
+        }
+        #purple{
+            background: purple;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 15px;
+        }
+        #black{
+            background: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="red" class="divbox"></div>
+        <div id="green" class="divbox">
+            <div id="purple"></div>
+        </div>
+        <div id="blue" class="divbox">
+            <div id="black"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Burada Relative Ve Absolute'un aynı anda kullanılınca ne olduğunu, absolute un tek başına kullanılınca ne olduğunu 
+görüyoruz. Relative ile olan üzerinde bulunduğu kutucuğa göre konum alırken; sadece absolute'un olduğu yerde kutucuk, 
+bütün ekranı baz alıyor ve ekranın köşelerine göre konumunu hesaplıyor.-->
