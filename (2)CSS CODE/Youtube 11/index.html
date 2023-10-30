@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- sanırım preconnect olanları sadece bir kere
+                                                                              yazıyoruz. Diğer fontlar için bir kere daha
+                                                                              yazmana gerek yok.-->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 200%; /* (çünkü default 16px) 32px = 200% = 2em */
+            /*
+            font-weight: 800;
+            font-style: italic;
+            */
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* browser eğer desteklemezse bir sonraki türü dener ki sans-serif 
+            her yerde desteklendiği için neredeyse her zaman en sonda o yazılır. */
+            /* Ancak burada gördüğümüz fontlar pek yeterli ve güzel değil, dolayısıyla google fonts kaynağına gidebiliriz. */
+            /* Ancak google fonts da bulunan font ların hepsi her zaman weight, italic gibi ayarları desteklemeyebilir. Yapsan
+            dahi aynı kalır yani. */
+            /* Bu fontları kullanabilmek için ilgili alandan <link> etiketini alıp head kısmına yapıştırıp sonra kullanabilir
+            iz. */
+            font-family: 'Agbalumo', sans-serif; /* kendin yaz, ide de gözükmüyor. */
+        }
+        h1{
+            font-size: 3em;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem, İpsum, Dolor !</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, officiis?</p>
+</body>
+</html>
