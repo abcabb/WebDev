@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px 50px;
+            font-size: 64px;
+            transition: all 0.5s ease;
+        }
+
+        .button1:hover{
+            transform: translate(-50%, -50%);
+/* translate(x-apsis, y-apsis). translate changes the position of the object.*/
+/*  translateY() -> changes only the y apsis...*/
+        }
+
+        .button2{
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 32px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: all 1s ease;
+        }
+
+        .button2:hover{
+            transform: scale(0.9);
+            background-color: aqua;
+            color: black;
+        }
+
+        .button3{
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            left: 180px;
+            background-color: #333;
+            color: white;
+            font-size: 32px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: all 1s ease;
+        }
+
+        .button3:hover{
+            transform: rotate(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <a class="button button1" href="">Test</a>
+    <a class="button button2" href="">Tıkla</a>
+    <a class="button button3" href="">Click</a>
+</body>
+</html>
