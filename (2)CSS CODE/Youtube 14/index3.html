@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .box1{
+            background-color: yellow;
+            transition: all 1s ease;
+        }
+        .box1:hover{
+            background-color: black;
+        }
+        .box2{
+            background-color: chartreuse;
+            transition: all 1s ease-in;
+        }
+        .box2:hover{
+            background-color: black;
+        }
+        .box3{
+            background-color: green;
+            transition: all 1s ease-out;
+        }
+        .box3:hover{
+            background-color: black;
+        }
+        .box4{
+            background-color: rebeccapurple;
+            transition: all 1s ease-in-out;
+        }
+        .box4:hover{
+            background-color: black;
+        }
+        .box5{
+            background-color: darkblue;
+            transition: all 1s linear;
+        }
+        .box5:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+</body>
+</html>
+
+<!-- NOT : 
+Kodunuzda .box{ } içerisine float: left; koymamanıza rağmen hepsinin yan yana dizilmesinin nedeni, display özelliği ile ilgilidir. Display özelliği, bir elementin sayfadaki görünümünü ve davranışını belirlemek için kullanılır. Display özelliğinin değerleri şunlardır: none, block, inline, inline-block, flex, grid, table, list-item ve daha fazlası1.
+
+Sizin kodunuzda, .box sınıfına display: inline-block; değerini vermişsiniz. Bu da demek oluyor ki, .box sınıfına sahip elementler hem inline hem de block özelliklerine sahip olacaklar. Inline elementler, satır içinde yer alır ve genişlik ve yükseklik gibi boyut özelliklerini almazlar. Block elementler ise satır başında yer alır ve genişlik ve yükseklik gibi boyut özelliklerini alırlar2. Inline-block elementler ise satır içinde yer alırken, genişlik ve yükseklik gibi boyut özelliklerini de alırlar3.
+
+Bu durumda, .box sınıfına sahip elementler (div elementleri) satır içinde yan yana dizilecekler ve aynı zamanda belirlediğiniz genişlik ve yükseklik değerlerine sahip olacaklardır. Bu yüzden, float: left; koymamanıza rağmen hepsi yan yana dizilmiştir.
+
+Umarım bu açıklama size yardımcı olmuştur. 😊 -->

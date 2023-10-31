@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            color: white;
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all 1s ease;
+/* all -> all characteristics ; .5s -> 0.5 seconds of duration ; ease -> transition type*/
+        }
+        #button1{
+            text-decoration: none;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            color: white;
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: color 1s, background-color 5s ease;
+        }
+
+        a:hover{
+            color: black;
+            background-color: white;
+        }
+
+        #button1:hover{
+            color: black;
+            background-color: white;
+        }
+
+        body{
+            background-color: rgb(200,200,200);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <a href="">Tıkla</a>
+    <hr>
+    <a href="" id="button1">Click</a>
 </body>
 </html>
