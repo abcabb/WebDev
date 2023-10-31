@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button3{
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            left: 180px;
+            background-color: #333;
+            color: white;
+            font-size: 32px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: all 1s ease;
+        }
+
+        .button3:hover{
+            transform: rotate(180deg);
+/* mesela transform hangi tarayıcılarda hangi sürücülerde destekleniyor bilmiyoruz. Bunun için W3School a gidip bakabilriz.
+Desteklenmeyen sürümlerde de çalışması için aynısını başına -moz- -webkit- gibi kısa kodlarla birlikte bir daha yazarak 
+halledebiliriz. Ama üsttekini silme o kalsın bu arada. */
+            -webkit-transform: rotate(180deg);
+/* bu satır ile ; google safari ve operanın belirli sürümlerine kadar indik. */
+            -o-transform: rotate(180deg);
+/*bu opera tarayıcısının çok eski bir sürümü içindi mesela */ 
+            -moz-transform: rotate(180deg);
+/* mozillanın bi sürümüne kadar */
+        }
+    </style>
+</head>
+<body>
+    <a class="button button3" href="">Click</a>
+</body>
+</html>
